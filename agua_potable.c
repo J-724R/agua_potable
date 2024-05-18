@@ -23,7 +23,7 @@ int main()
     while (i < n_parroquias) // Ciclo condicional
     {
         printf("Nombre de la parroquia: ");
-        scanf("%s", &parroquias[i]);
+        scanf("%s", parroquias[i]);
         printf("poblacion: ");
         scanf("%d", &poblacion[i]);
 
@@ -99,12 +99,12 @@ int main()
         for (int parroquia = 0; parroquia < n_parroquias; parroquia++)
         {
             resultado = strcmp(parroquias[parroquia], consulta);
-            if (resultado = 0)
+            if (resultado == 0)
             {
                 printf("\n### Consumo parroquia %s ###\n", consulta);
                 for (int dia = 0; dia <= 6; dia++)
                 {
-                    printf("%s : ", dias_semana[dia]);
+                    printf("%s : %d \n", dias_semana[dia], consumo[parroquia][dia]);
                 }
             }
         }

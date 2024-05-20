@@ -106,8 +106,11 @@ int main()
                 {
                     printf("%s : %d \n", dias_semana[dia], consumo[parroquia][dia]);
                 }
+                break;
             }
         }
+
+        printf("resultado: %i", resultado);
 
         if (resultado != 0)
         {
@@ -115,7 +118,7 @@ int main()
         }
 
         printf("Desea hacer otra consulta? \n Presione 0 para continuar o 1 para salir");
-
+        scanf("%s", continuar);
     } while (continuar = 0);
 
     printf("\nHello World!\n");
